@@ -1,7 +1,0 @@
-{
-  "name": "this-clean-house",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite"
-}
