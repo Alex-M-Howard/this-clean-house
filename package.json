@@ -1,0 +1,38 @@
+{
+  "name": "tch-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "start:api": "start nodemon app.ts",
+    "start:db": "cd C:\\users\\alexa\\Programming\\dynamodb && java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb",
+    "start:all": "npm run start:api && cd clean-house && ionic serve && npm run start:db",
+    "killnode": "C:\\users\\alexa\\Programming\\this-clean-house\\tools\\killnode.bat || sudo killall node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-M-Howard/clean-house.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex-M-Howard/clean-house/issues"
+  },
+  "homepage": "https://github.com/Alex-M-Howard/clean-house#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1373.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  }
+}
